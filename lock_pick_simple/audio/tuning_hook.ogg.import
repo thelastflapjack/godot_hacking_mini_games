@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tuning_hook.ogg-e5bd883af5d849916c90641c62750d1a.oggstr"
+
+[deps]
+
+source_file="res://lock_pick_simple/audio/tuning_hook.ogg"
+dest_files=[ "res://.import/tuning_hook.ogg-e5bd883af5d849916c90641c62750d1a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

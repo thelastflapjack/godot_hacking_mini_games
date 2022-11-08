@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jammed.ogg-0964c52b940d50cb2fa76c5155937952.oggstr"
+
+[deps]
+
+source_file="res://lock_pick_simple/audio/jammed.ogg"
+dest_files=[ "res://.import/jammed.ogg-0964c52b940d50cb2fa76c5155937952.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

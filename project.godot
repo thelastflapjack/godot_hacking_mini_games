@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Hacking Mini-Games"
+
+[audio]
+
+default_bus_layout="res://audio_bus_layout_default.tres"
+
+[editor]
+
+scene_naming=1
+
+[mono]
+
+project/assembly_name="hacking_mini_games"
+
+[rendering]
+
+quality/filters/msaa=2
+environment/default_environment="res://world_env_default.tres"
