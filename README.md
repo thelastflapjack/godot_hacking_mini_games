@@ -2,8 +2,8 @@
 
 A collection of hacking type of mini games which I will add to over time.
 
-## Games
+## Mini-Games
 
 ### 1. Lock Pick Simple
 
-  A very basic lock pick puzzle where you have to find the correct angle to unlock. [Link to video]
+A simple lock pick puzzle where you have to find the correct pick angle, similar to the mini-game found in the Fallout series. Created in Godot 3.5.1. [Example Video](https://youtu.be/kbWt7lNkhRU)
