@@ -1,0 +1,5149 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://terminal_hack/game/Game.cs" type="Script" id=1]
+[ext_resource path="res://terminal_hack/theme/terminal.theme" type="Theme" id=2]
+[ext_resource path="res://terminal_hack/game/terminal_character/TerminalCharacter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://terminal_hack/game/history_line/HistoryLine.tscn" type="PackedScene" id=4]
+[ext_resource path="res://terminal_hack/game/selection_line/SelectionLine.tscn" type="PackedScene" id=5]
+
+[sub_resource type="StyleBoxLine" id=2]
+color = Color( 1, 1, 1, 1 )
+grow_begin = 20.0
+grow_end = 20.0
+thickness = 3
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 1, 1, 1, 1 )
+grow_begin = 29.0
+grow_end = 32.0
+thickness = 3
+
+[node name="Game" type="Control"]
+modulate = Color( 0.00392157, 0.556863, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -510.0
+margin_top = -300.0
+margin_right = 510.0
+margin_bottom = 300.0
+mouse_filter = 2
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+_initialFocusTarget = NodePath("HBoxContainer2/ProblemSpace/ColumnLeft/TerminalCharacter1")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+use_parent_material = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+custom_constants/separation = 25
+alignment = 1
+
+[node name="ProblemSpace" type="HBoxContainer" parent="HBoxContainer2"]
+use_parent_material = true
+margin_left = 11.0
+margin_right = 542.0
+margin_bottom = 560.0
+custom_constants/separation = 25
+
+[node name="HexColumnLeft" type="VBoxContainer" parent="HBoxContainer2/ProblemSpace"]
+use_parent_material = true
+margin_top = 12.0
+margin_right = 72.0
+margin_bottom = 548.0
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_right = 72.0
+margin_bottom = 26.0
+text = "0xA4F0"
+
+[node name="Label18" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 30.0
+margin_right = 72.0
+margin_bottom = 56.0
+text = "0xA4F0"
+
+[node name="Label2" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 60.0
+margin_right = 72.0
+margin_bottom = 86.0
+text = "0xA4F0"
+
+[node name="Label3" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 90.0
+margin_right = 72.0
+margin_bottom = 116.0
+text = "0xA4F0"
+
+[node name="Label4" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 120.0
+margin_right = 72.0
+margin_bottom = 146.0
+text = "0xA4F0"
+
+[node name="Label5" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 150.0
+margin_right = 72.0
+margin_bottom = 176.0
+text = "0xA4F0"
+
+[node name="Label6" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 180.0
+margin_right = 72.0
+margin_bottom = 206.0
+text = "0xA4F0"
+
+[node name="Label7" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 210.0
+margin_right = 72.0
+margin_bottom = 236.0
+text = "0xA4F0"
+
+[node name="Label8" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 240.0
+margin_right = 72.0
+margin_bottom = 266.0
+text = "0xA4F0"
+
+[node name="Label9" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 270.0
+margin_right = 72.0
+margin_bottom = 296.0
+text = "0xA4F0"
+
+[node name="Label10" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 300.0
+margin_right = 72.0
+margin_bottom = 326.0
+text = "0xA4F0"
+
+[node name="Label11" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 330.0
+margin_right = 72.0
+margin_bottom = 356.0
+text = "0xA4F0"
+
+[node name="Label12" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 360.0
+margin_right = 72.0
+margin_bottom = 386.0
+text = "0xA4F0"
+
+[node name="Label13" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 390.0
+margin_right = 72.0
+margin_bottom = 416.0
+text = "0xA4F0"
+
+[node name="Label14" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 420.0
+margin_right = 72.0
+margin_bottom = 446.0
+text = "0xA4F0"
+
+[node name="Label15" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 450.0
+margin_right = 72.0
+margin_bottom = 476.0
+text = "0xA4F0"
+
+[node name="Label16" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 480.0
+margin_right = 72.0
+margin_bottom = 506.0
+text = "0xA4F0"
+
+[node name="Label17" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnLeft"]
+use_parent_material = true
+margin_top = 510.0
+margin_right = 72.0
+margin_bottom = 536.0
+text = "0xA4F0"
+
+[node name="ColumnLeft" type="GridContainer" parent="HBoxContainer2/ProblemSpace"]
+use_parent_material = true
+margin_left = 97.0
+margin_top = 12.0
+margin_right = 253.0
+margin_bottom = 548.0
+size_flags_vertical = 4
+custom_constants/hseparation = 0
+columns = 13
+
+[node name="TerminalCharacter1" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 12.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter2" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 0.0
+margin_right = 24.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter3" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 0.0
+margin_right = 36.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter4" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 0.0
+margin_right = 48.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter5" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 0.0
+margin_right = 60.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter6" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 0.0
+margin_right = 72.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter7" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 0.0
+margin_right = 84.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter8" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 0.0
+margin_right = 96.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter9" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 0.0
+margin_right = 108.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter10" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 0.0
+margin_right = 120.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter11" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 0.0
+margin_right = 132.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter12" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 0.0
+margin_right = 144.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter13" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 0.0
+margin_right = 156.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter14" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 30.0
+margin_right = 12.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter15" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 30.0
+margin_right = 24.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter16" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 30.0
+margin_right = 36.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter17" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 30.0
+margin_right = 48.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter18" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 30.0
+margin_right = 60.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter19" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 30.0
+margin_right = 72.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter20" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 30.0
+margin_right = 84.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter21" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 30.0
+margin_right = 96.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter22" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 30.0
+margin_right = 108.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter23" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 30.0
+margin_right = 120.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter24" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 30.0
+margin_right = 132.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter25" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 30.0
+margin_right = 144.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter26" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 30.0
+margin_right = 156.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter27" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 60.0
+margin_right = 12.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter28" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 60.0
+margin_right = 24.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter29" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 60.0
+margin_right = 36.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter30" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 60.0
+margin_right = 48.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter31" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter32" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 60.0
+margin_right = 72.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter33" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 60.0
+margin_right = 84.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter34" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 60.0
+margin_right = 96.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter35" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 60.0
+margin_right = 108.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter36" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 60.0
+margin_right = 120.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter37" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 60.0
+margin_right = 132.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter38" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 60.0
+margin_right = 144.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter39" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 60.0
+margin_right = 156.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter40" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 90.0
+margin_right = 12.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter41" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 90.0
+margin_right = 24.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter42" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 90.0
+margin_right = 36.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter43" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 90.0
+margin_right = 48.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter44" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 90.0
+margin_right = 60.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter45" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 90.0
+margin_right = 72.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter46" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 90.0
+margin_right = 84.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter47" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 90.0
+margin_right = 96.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter48" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 90.0
+margin_right = 108.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter49" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 90.0
+margin_right = 120.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter50" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 90.0
+margin_right = 132.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter51" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 90.0
+margin_right = 144.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter52" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 90.0
+margin_right = 156.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter53" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 120.0
+margin_right = 12.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter54" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 120.0
+margin_right = 24.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter55" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 120.0
+margin_right = 36.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter56" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 120.0
+margin_right = 48.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter57" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter58" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 120.0
+margin_right = 72.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter59" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 120.0
+margin_right = 84.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter60" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 120.0
+margin_right = 96.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter61" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 120.0
+margin_right = 108.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter62" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 120.0
+margin_right = 120.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter63" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 120.0
+margin_right = 132.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter64" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 120.0
+margin_right = 144.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter65" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 120.0
+margin_right = 156.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter66" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 150.0
+margin_right = 12.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter67" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 150.0
+margin_right = 24.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter68" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 150.0
+margin_right = 36.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter69" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 150.0
+margin_right = 48.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter70" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 150.0
+margin_right = 60.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter71" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 150.0
+margin_right = 72.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter72" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 150.0
+margin_right = 84.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter73" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 150.0
+margin_right = 96.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter74" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 150.0
+margin_right = 108.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter75" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 150.0
+margin_right = 120.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter76" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 150.0
+margin_right = 132.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter77" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 150.0
+margin_right = 144.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter78" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 150.0
+margin_right = 156.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter79" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 180.0
+margin_right = 12.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter80" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 180.0
+margin_right = 24.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter81" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 180.0
+margin_right = 36.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter82" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 180.0
+margin_right = 48.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter83" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter84" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 180.0
+margin_right = 72.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter85" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 180.0
+margin_right = 84.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter86" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 180.0
+margin_right = 96.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter87" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 180.0
+margin_right = 108.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter88" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 180.0
+margin_right = 120.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter89" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 180.0
+margin_right = 132.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter90" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 180.0
+margin_right = 144.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter91" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 180.0
+margin_right = 156.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter92" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 210.0
+margin_right = 12.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter93" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 210.0
+margin_right = 24.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter94" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 210.0
+margin_right = 36.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter95" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 210.0
+margin_right = 48.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter96" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 210.0
+margin_right = 60.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter97" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 210.0
+margin_right = 72.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter98" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 210.0
+margin_right = 84.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter99" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 210.0
+margin_right = 96.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter100" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 210.0
+margin_right = 108.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter101" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 210.0
+margin_right = 120.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter102" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 210.0
+margin_right = 132.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter103" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 210.0
+margin_right = 144.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter104" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 210.0
+margin_right = 156.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter105" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 240.0
+margin_right = 12.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter106" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 240.0
+margin_right = 24.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter107" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 240.0
+margin_right = 36.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter108" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 240.0
+margin_right = 48.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter109" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter110" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 240.0
+margin_right = 72.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter111" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 240.0
+margin_right = 84.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter112" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 240.0
+margin_right = 96.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter113" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 240.0
+margin_right = 108.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter114" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 240.0
+margin_right = 120.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter115" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 240.0
+margin_right = 132.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter116" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 240.0
+margin_right = 144.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter117" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 240.0
+margin_right = 156.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter118" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 270.0
+margin_right = 12.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter119" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 270.0
+margin_right = 24.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter120" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 270.0
+margin_right = 36.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter121" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 270.0
+margin_right = 48.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter122" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 270.0
+margin_right = 60.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter123" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 270.0
+margin_right = 72.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter124" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 270.0
+margin_right = 84.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter125" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 270.0
+margin_right = 96.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter126" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 270.0
+margin_right = 108.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter127" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 270.0
+margin_right = 120.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter128" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 270.0
+margin_right = 132.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter129" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 270.0
+margin_right = 144.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter130" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 270.0
+margin_right = 156.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter131" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 300.0
+margin_right = 12.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter132" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 300.0
+margin_right = 24.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter133" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 300.0
+margin_right = 36.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter134" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 300.0
+margin_right = 48.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter135" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter136" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 300.0
+margin_right = 72.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter137" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 300.0
+margin_right = 84.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter138" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 300.0
+margin_right = 96.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter139" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 300.0
+margin_right = 108.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter140" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 300.0
+margin_right = 120.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter141" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 300.0
+margin_right = 132.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter142" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 300.0
+margin_right = 144.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter143" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 300.0
+margin_right = 156.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter144" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 330.0
+margin_right = 12.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter145" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 330.0
+margin_right = 24.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter146" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 330.0
+margin_right = 36.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter147" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 330.0
+margin_right = 48.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter148" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 330.0
+margin_right = 60.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter149" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 330.0
+margin_right = 72.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter150" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 330.0
+margin_right = 84.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter151" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 330.0
+margin_right = 96.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter152" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 330.0
+margin_right = 108.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter153" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 330.0
+margin_right = 120.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter154" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 330.0
+margin_right = 132.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter155" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 330.0
+margin_right = 144.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter156" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 330.0
+margin_right = 156.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter157" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 360.0
+margin_right = 12.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter158" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 360.0
+margin_right = 24.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter159" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 360.0
+margin_right = 36.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter160" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 360.0
+margin_right = 48.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter161" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter162" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 360.0
+margin_right = 72.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter163" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 360.0
+margin_right = 84.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter164" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 360.0
+margin_right = 96.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter165" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 360.0
+margin_right = 108.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter166" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 360.0
+margin_right = 120.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter167" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 360.0
+margin_right = 132.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter168" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 360.0
+margin_right = 144.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter169" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 360.0
+margin_right = 156.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter170" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 390.0
+margin_right = 12.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter171" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 390.0
+margin_right = 24.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter172" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 390.0
+margin_right = 36.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter173" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 390.0
+margin_right = 48.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter174" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 390.0
+margin_right = 60.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter175" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 390.0
+margin_right = 72.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter176" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 390.0
+margin_right = 84.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter177" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 390.0
+margin_right = 96.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter178" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 390.0
+margin_right = 108.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter179" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 390.0
+margin_right = 120.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter180" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 390.0
+margin_right = 132.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter181" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 390.0
+margin_right = 144.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter182" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 390.0
+margin_right = 156.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter183" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 420.0
+margin_right = 12.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter184" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 420.0
+margin_right = 24.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter185" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 420.0
+margin_right = 36.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter186" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 420.0
+margin_right = 48.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter187" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter188" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 420.0
+margin_right = 72.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter189" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 420.0
+margin_right = 84.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter190" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 420.0
+margin_right = 96.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter191" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 420.0
+margin_right = 108.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter192" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 420.0
+margin_right = 120.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter193" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 420.0
+margin_right = 132.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter194" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 420.0
+margin_right = 144.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter195" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 420.0
+margin_right = 156.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter196" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 450.0
+margin_right = 12.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter197" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 450.0
+margin_right = 24.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter198" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 450.0
+margin_right = 36.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter199" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 450.0
+margin_right = 48.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter200" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 450.0
+margin_right = 60.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter201" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 450.0
+margin_right = 72.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter202" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 450.0
+margin_right = 84.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter203" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 450.0
+margin_right = 96.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter204" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 450.0
+margin_right = 108.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter205" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 450.0
+margin_right = 120.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter206" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 450.0
+margin_right = 132.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter207" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 450.0
+margin_right = 144.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter208" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 450.0
+margin_right = 156.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter209" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 480.0
+margin_right = 12.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter210" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 480.0
+margin_right = 24.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter211" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 480.0
+margin_right = 36.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter212" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 480.0
+margin_right = 48.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter213" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 480.0
+margin_right = 60.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter214" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 480.0
+margin_right = 72.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter215" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 480.0
+margin_right = 84.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter216" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 480.0
+margin_right = 96.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter217" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 480.0
+margin_right = 108.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter218" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 480.0
+margin_right = 120.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter219" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 480.0
+margin_right = 132.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter220" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 480.0
+margin_right = 144.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter221" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 480.0
+margin_right = 156.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter222" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 510.0
+margin_right = 12.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter223" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 510.0
+margin_right = 24.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter224" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 510.0
+margin_right = 36.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter225" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 510.0
+margin_right = 48.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter226" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 510.0
+margin_right = 60.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter227" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 510.0
+margin_right = 72.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter228" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 510.0
+margin_right = 84.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter229" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 510.0
+margin_right = 96.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter230" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 510.0
+margin_right = 108.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter231" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 510.0
+margin_right = 120.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter232" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 510.0
+margin_right = 132.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter233" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 510.0
+margin_right = 144.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter234" parent="HBoxContainer2/ProblemSpace/ColumnLeft" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 510.0
+margin_right = 156.0
+margin_bottom = 536.0
+
+[node name="HexColumnRight" type="VBoxContainer" parent="HBoxContainer2/ProblemSpace"]
+use_parent_material = true
+margin_left = 278.0
+margin_top = 12.0
+margin_right = 350.0
+margin_bottom = 548.0
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_right = 72.0
+margin_bottom = 26.0
+text = "0x4DC6"
+
+[node name="Label2" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 30.0
+margin_right = 72.0
+margin_bottom = 56.0
+text = "0x4DC6"
+
+[node name="Label3" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 60.0
+margin_right = 72.0
+margin_bottom = 86.0
+text = "0x4DC6"
+
+[node name="Label4" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 90.0
+margin_right = 72.0
+margin_bottom = 116.0
+text = "0x4DC6"
+
+[node name="Label5" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 120.0
+margin_right = 72.0
+margin_bottom = 146.0
+text = "0x4DC6"
+
+[node name="Label18" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 150.0
+margin_right = 72.0
+margin_bottom = 176.0
+text = "0x4DC6"
+
+[node name="Label6" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 180.0
+margin_right = 72.0
+margin_bottom = 206.0
+text = "0x4DC6"
+
+[node name="Label7" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 210.0
+margin_right = 72.0
+margin_bottom = 236.0
+text = "0x4DC6"
+
+[node name="Label8" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 240.0
+margin_right = 72.0
+margin_bottom = 266.0
+text = "0x4DC6"
+
+[node name="Label9" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 270.0
+margin_right = 72.0
+margin_bottom = 296.0
+text = "0x4DC6"
+
+[node name="Label10" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 300.0
+margin_right = 72.0
+margin_bottom = 326.0
+text = "0x4DC6"
+
+[node name="Label11" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 330.0
+margin_right = 72.0
+margin_bottom = 356.0
+text = "0x4DC6"
+
+[node name="Label12" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 360.0
+margin_right = 72.0
+margin_bottom = 386.0
+text = "0x4DC6"
+
+[node name="Label13" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 390.0
+margin_right = 72.0
+margin_bottom = 416.0
+text = "0x4DC6"
+
+[node name="Label14" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 420.0
+margin_right = 72.0
+margin_bottom = 446.0
+text = "0x4DC6"
+
+[node name="Label15" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 450.0
+margin_right = 72.0
+margin_bottom = 476.0
+text = "0x4DC6"
+
+[node name="Label16" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 480.0
+margin_right = 72.0
+margin_bottom = 506.0
+text = "0x4DC6"
+
+[node name="Label17" type="Label" parent="HBoxContainer2/ProblemSpace/HexColumnRight"]
+use_parent_material = true
+margin_top = 510.0
+margin_right = 72.0
+margin_bottom = 536.0
+text = "0x4DC6"
+
+[node name="ColumnRight" type="GridContainer" parent="HBoxContainer2/ProblemSpace"]
+use_parent_material = true
+margin_left = 375.0
+margin_top = 12.0
+margin_right = 531.0
+margin_bottom = 548.0
+size_flags_vertical = 4
+custom_constants/hseparation = 0
+columns = 13
+
+[node name="TerminalCharacter1" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 12.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter2" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 0.0
+margin_right = 24.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter3" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 0.0
+margin_right = 36.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter4" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 0.0
+margin_right = 48.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter5" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 0.0
+margin_right = 60.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter6" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 0.0
+margin_right = 72.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter7" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 0.0
+margin_right = 84.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter8" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 0.0
+margin_right = 96.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter9" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 0.0
+margin_right = 108.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter10" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 0.0
+margin_right = 120.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter11" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 0.0
+margin_right = 132.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter12" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 0.0
+margin_right = 144.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter13" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 0.0
+margin_right = 156.0
+margin_bottom = 26.0
+
+[node name="TerminalCharacter14" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 30.0
+margin_right = 12.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter15" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 30.0
+margin_right = 24.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter16" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 30.0
+margin_right = 36.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter17" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 30.0
+margin_right = 48.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter18" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 30.0
+margin_right = 60.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter19" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 30.0
+margin_right = 72.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter20" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 30.0
+margin_right = 84.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter21" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 30.0
+margin_right = 96.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter22" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 30.0
+margin_right = 108.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter23" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 30.0
+margin_right = 120.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter24" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 30.0
+margin_right = 132.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter25" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 30.0
+margin_right = 144.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter26" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 30.0
+margin_right = 156.0
+margin_bottom = 56.0
+
+[node name="TerminalCharacter27" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 60.0
+margin_right = 12.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter28" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 60.0
+margin_right = 24.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter29" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 60.0
+margin_right = 36.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter30" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 60.0
+margin_right = 48.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter31" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter32" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 60.0
+margin_right = 72.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter33" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 60.0
+margin_right = 84.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter34" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 60.0
+margin_right = 96.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter35" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 60.0
+margin_right = 108.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter36" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 60.0
+margin_right = 120.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter37" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 60.0
+margin_right = 132.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter38" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 60.0
+margin_right = 144.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter39" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 60.0
+margin_right = 156.0
+margin_bottom = 86.0
+
+[node name="TerminalCharacter40" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 90.0
+margin_right = 12.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter41" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 90.0
+margin_right = 24.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter42" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 90.0
+margin_right = 36.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter43" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 90.0
+margin_right = 48.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter44" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 90.0
+margin_right = 60.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter45" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 90.0
+margin_right = 72.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter46" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 90.0
+margin_right = 84.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter47" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 90.0
+margin_right = 96.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter48" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 90.0
+margin_right = 108.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter49" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 90.0
+margin_right = 120.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter50" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 90.0
+margin_right = 132.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter51" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 90.0
+margin_right = 144.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter52" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 90.0
+margin_right = 156.0
+margin_bottom = 116.0
+
+[node name="TerminalCharacter53" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 120.0
+margin_right = 12.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter54" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 120.0
+margin_right = 24.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter55" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 120.0
+margin_right = 36.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter56" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 120.0
+margin_right = 48.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter57" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter58" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 120.0
+margin_right = 72.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter59" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 120.0
+margin_right = 84.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter60" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 120.0
+margin_right = 96.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter61" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 120.0
+margin_right = 108.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter62" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 120.0
+margin_right = 120.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter63" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 120.0
+margin_right = 132.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter64" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 120.0
+margin_right = 144.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter65" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 120.0
+margin_right = 156.0
+margin_bottom = 146.0
+
+[node name="TerminalCharacter66" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 150.0
+margin_right = 12.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter67" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 150.0
+margin_right = 24.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter68" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 150.0
+margin_right = 36.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter69" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 150.0
+margin_right = 48.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter70" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 150.0
+margin_right = 60.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter71" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 150.0
+margin_right = 72.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter72" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 150.0
+margin_right = 84.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter73" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 150.0
+margin_right = 96.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter74" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 150.0
+margin_right = 108.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter75" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 150.0
+margin_right = 120.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter76" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 150.0
+margin_right = 132.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter77" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 150.0
+margin_right = 144.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter78" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 150.0
+margin_right = 156.0
+margin_bottom = 176.0
+
+[node name="TerminalCharacter79" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 180.0
+margin_right = 12.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter80" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 180.0
+margin_right = 24.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter81" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 180.0
+margin_right = 36.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter82" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 180.0
+margin_right = 48.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter83" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter84" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 180.0
+margin_right = 72.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter85" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 180.0
+margin_right = 84.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter86" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 180.0
+margin_right = 96.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter87" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 180.0
+margin_right = 108.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter88" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 180.0
+margin_right = 120.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter89" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 180.0
+margin_right = 132.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter90" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 180.0
+margin_right = 144.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter91" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 180.0
+margin_right = 156.0
+margin_bottom = 206.0
+
+[node name="TerminalCharacter92" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 210.0
+margin_right = 12.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter93" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 210.0
+margin_right = 24.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter94" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 210.0
+margin_right = 36.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter95" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 210.0
+margin_right = 48.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter96" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 210.0
+margin_right = 60.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter97" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 210.0
+margin_right = 72.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter98" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 210.0
+margin_right = 84.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter99" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 210.0
+margin_right = 96.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter100" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 210.0
+margin_right = 108.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter101" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 210.0
+margin_right = 120.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter102" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 210.0
+margin_right = 132.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter103" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 210.0
+margin_right = 144.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter104" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 210.0
+margin_right = 156.0
+margin_bottom = 236.0
+
+[node name="TerminalCharacter105" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 240.0
+margin_right = 12.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter106" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 240.0
+margin_right = 24.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter107" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 240.0
+margin_right = 36.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter108" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 240.0
+margin_right = 48.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter109" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter110" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 240.0
+margin_right = 72.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter111" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 240.0
+margin_right = 84.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter112" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 240.0
+margin_right = 96.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter113" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 240.0
+margin_right = 108.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter114" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 240.0
+margin_right = 120.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter115" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 240.0
+margin_right = 132.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter116" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 240.0
+margin_right = 144.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter117" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 240.0
+margin_right = 156.0
+margin_bottom = 266.0
+
+[node name="TerminalCharacter118" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 270.0
+margin_right = 12.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter119" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 270.0
+margin_right = 24.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter120" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 270.0
+margin_right = 36.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter121" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 270.0
+margin_right = 48.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter122" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 270.0
+margin_right = 60.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter123" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 270.0
+margin_right = 72.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter124" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 270.0
+margin_right = 84.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter125" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 270.0
+margin_right = 96.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter126" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 270.0
+margin_right = 108.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter127" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 270.0
+margin_right = 120.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter128" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 270.0
+margin_right = 132.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter129" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 270.0
+margin_right = 144.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter130" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 270.0
+margin_right = 156.0
+margin_bottom = 296.0
+
+[node name="TerminalCharacter131" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 300.0
+margin_right = 12.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter132" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 300.0
+margin_right = 24.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter133" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 300.0
+margin_right = 36.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter134" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 300.0
+margin_right = 48.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter135" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter136" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 300.0
+margin_right = 72.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter137" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 300.0
+margin_right = 84.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter138" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 300.0
+margin_right = 96.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter139" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 300.0
+margin_right = 108.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter140" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 300.0
+margin_right = 120.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter141" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 300.0
+margin_right = 132.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter142" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 300.0
+margin_right = 144.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter143" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 300.0
+margin_right = 156.0
+margin_bottom = 326.0
+
+[node name="TerminalCharacter144" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 330.0
+margin_right = 12.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter145" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 330.0
+margin_right = 24.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter146" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 330.0
+margin_right = 36.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter147" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 330.0
+margin_right = 48.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter148" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 330.0
+margin_right = 60.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter149" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 330.0
+margin_right = 72.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter150" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 330.0
+margin_right = 84.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter151" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 330.0
+margin_right = 96.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter152" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 330.0
+margin_right = 108.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter153" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 330.0
+margin_right = 120.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter154" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 330.0
+margin_right = 132.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter155" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 330.0
+margin_right = 144.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter156" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 330.0
+margin_right = 156.0
+margin_bottom = 356.0
+
+[node name="TerminalCharacter157" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 360.0
+margin_right = 12.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter158" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 360.0
+margin_right = 24.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter159" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 360.0
+margin_right = 36.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter160" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 360.0
+margin_right = 48.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter161" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter162" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 360.0
+margin_right = 72.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter163" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 360.0
+margin_right = 84.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter164" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 360.0
+margin_right = 96.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter165" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 360.0
+margin_right = 108.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter166" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 360.0
+margin_right = 120.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter167" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 360.0
+margin_right = 132.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter168" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 360.0
+margin_right = 144.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter169" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 360.0
+margin_right = 156.0
+margin_bottom = 386.0
+
+[node name="TerminalCharacter170" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 390.0
+margin_right = 12.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter171" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 390.0
+margin_right = 24.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter172" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 390.0
+margin_right = 36.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter173" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 390.0
+margin_right = 48.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter174" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 390.0
+margin_right = 60.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter175" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 390.0
+margin_right = 72.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter176" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 390.0
+margin_right = 84.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter177" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 390.0
+margin_right = 96.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter178" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 390.0
+margin_right = 108.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter179" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 390.0
+margin_right = 120.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter180" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 390.0
+margin_right = 132.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter181" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 390.0
+margin_right = 144.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter182" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 390.0
+margin_right = 156.0
+margin_bottom = 416.0
+
+[node name="TerminalCharacter183" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 420.0
+margin_right = 12.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter184" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 420.0
+margin_right = 24.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter185" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 420.0
+margin_right = 36.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter186" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 420.0
+margin_right = 48.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter187" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter188" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 420.0
+margin_right = 72.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter189" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 420.0
+margin_right = 84.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter190" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 420.0
+margin_right = 96.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter191" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 420.0
+margin_right = 108.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter192" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 420.0
+margin_right = 120.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter193" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 420.0
+margin_right = 132.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter194" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 420.0
+margin_right = 144.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter195" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 420.0
+margin_right = 156.0
+margin_bottom = 446.0
+
+[node name="TerminalCharacter196" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 450.0
+margin_right = 12.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter197" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 450.0
+margin_right = 24.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter198" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 450.0
+margin_right = 36.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter199" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 450.0
+margin_right = 48.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter200" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 450.0
+margin_right = 60.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter201" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 450.0
+margin_right = 72.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter202" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 450.0
+margin_right = 84.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter203" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 450.0
+margin_right = 96.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter204" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 450.0
+margin_right = 108.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter205" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 450.0
+margin_right = 120.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter206" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 450.0
+margin_right = 132.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter207" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 450.0
+margin_right = 144.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter208" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 450.0
+margin_right = 156.0
+margin_bottom = 476.0
+
+[node name="TerminalCharacter209" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 480.0
+margin_right = 12.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter210" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 480.0
+margin_right = 24.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter211" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 480.0
+margin_right = 36.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter212" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 480.0
+margin_right = 48.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter213" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 480.0
+margin_right = 60.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter214" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 480.0
+margin_right = 72.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter215" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 480.0
+margin_right = 84.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter216" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 480.0
+margin_right = 96.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter217" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 480.0
+margin_right = 108.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter218" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 480.0
+margin_right = 120.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter219" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 480.0
+margin_right = 132.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter220" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 480.0
+margin_right = 144.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter221" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 480.0
+margin_right = 156.0
+margin_bottom = 506.0
+
+[node name="TerminalCharacter222" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 510.0
+margin_right = 12.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter223" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 510.0
+margin_right = 24.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter224" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 24.0
+margin_top = 510.0
+margin_right = 36.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter225" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 510.0
+margin_right = 48.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter226" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 510.0
+margin_right = 60.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter227" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 60.0
+margin_top = 510.0
+margin_right = 72.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter228" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 510.0
+margin_right = 84.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter229" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 510.0
+margin_right = 96.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter230" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 96.0
+margin_top = 510.0
+margin_right = 108.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter231" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 108.0
+margin_top = 510.0
+margin_right = 120.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter232" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 510.0
+margin_right = 132.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter233" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 132.0
+margin_top = 510.0
+margin_right = 144.0
+margin_bottom = 536.0
+
+[node name="TerminalCharacter234" parent="HBoxContainer2/ProblemSpace/ColumnRight" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 510.0
+margin_right = 156.0
+margin_bottom = 536.0
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer2"]
+use_parent_material = true
+margin_left = 567.0
+margin_right = 571.0
+margin_bottom = 560.0
+size_flags_vertical = 3
+custom_styles/separator = SubResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer2"]
+use_parent_material = true
+margin_left = 596.0
+margin_top = 12.0
+margin_right = 968.0
+margin_bottom = 548.0
+size_flags_vertical = 4
+custom_constants/separation = 15
+
+[node name="InputPrompt" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer"]
+use_parent_material = true
+margin_right = 372.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="HBoxContainer2/VBoxContainer/InputPrompt"]
+use_parent_material = true
+margin_right = 372.0
+margin_bottom = 26.0
+text = "Fontaine Electric - Shell Login"
+valign = 1
+
+[node name="PasswordRequired" type="Label" parent="HBoxContainer2/VBoxContainer/InputPrompt"]
+use_parent_material = true
+margin_top = 30.0
+margin_right = 372.0
+margin_bottom = 56.0
+text = "Password Required..."
+valign = 1
+
+[node name="AttemptCounter" type="Label" parent="HBoxContainer2/VBoxContainer/InputPrompt"]
+use_parent_material = true
+margin_top = 60.0
+margin_right = 372.0
+margin_bottom = 86.0
+text = "Remaining attempts: 4"
+valign = 1
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer2/VBoxContainer"]
+use_parent_material = true
+margin_top = 101.0
+margin_right = 372.0
+margin_bottom = 105.0
+custom_styles/separator = SubResource( 3 )
+
+[node name="InputLines" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer"]
+use_parent_material = true
+margin_top = 120.0
+margin_right = 372.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="HistoryLine1" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_right = 372.0
+margin_bottom = 26.0
+
+[node name="HistoryLine2" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 30.0
+margin_right = 372.0
+margin_bottom = 56.0
+
+[node name="HistoryLine3" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 60.0
+margin_right = 372.0
+margin_bottom = 86.0
+
+[node name="HistoryLine4" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 90.0
+margin_right = 372.0
+margin_bottom = 116.0
+
+[node name="HistoryLine5" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 120.0
+margin_right = 372.0
+margin_bottom = 146.0
+
+[node name="HistoryLine6" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 150.0
+margin_right = 372.0
+margin_bottom = 176.0
+
+[node name="HistoryLine7" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 180.0
+margin_right = 372.0
+margin_bottom = 206.0
+
+[node name="HistoryLine8" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 210.0
+margin_right = 372.0
+margin_bottom = 236.0
+
+[node name="HistoryLine9" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 240.0
+margin_right = 372.0
+margin_bottom = 266.0
+
+[node name="HistoryLine10" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 270.0
+margin_right = 372.0
+margin_bottom = 296.0
+
+[node name="HistoryLine11" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 300.0
+margin_right = 372.0
+margin_bottom = 326.0
+
+[node name="HistoryLine12" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 330.0
+margin_right = 372.0
+margin_bottom = 356.0
+
+[node name="HistoryLine13" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 4 )]
+margin_top = 360.0
+margin_right = 372.0
+margin_bottom = 386.0
+
+[node name="SelectionLine" parent="HBoxContainer2/VBoxContainer/InputLines" instance=ExtResource( 5 )]
+margin_top = 390.0
+margin_right = 372.0
+margin_bottom = 416.0

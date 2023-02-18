@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/background.ogg-32dd3e0c97a6a664e5374b46b85df747.oggstr"
+
+[deps]
+
+source_file="res://terminal_hack/audio/background.ogg"
+dest_files=[ "res://.import/background.ogg-32dd3e0c97a6a664e5374b46b85df747.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

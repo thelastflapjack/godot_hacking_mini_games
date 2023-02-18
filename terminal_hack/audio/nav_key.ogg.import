@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nav_key.ogg-8d4974155895f33c770f5983c9afa7f5.oggstr"
+
+[deps]
+
+source_file="res://terminal_hack/audio/nav_key.ogg"
+dest_files=[ "res://.import/nav_key.ogg-8d4974155895f33c770f5983c9afa7f5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

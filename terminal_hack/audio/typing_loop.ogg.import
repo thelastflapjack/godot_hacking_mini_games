@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/typing_loop.ogg-1c90be540f2239c6470906fc1183267c.oggstr"
+
+[deps]
+
+source_file="res://terminal_hack/audio/typing_loop.ogg"
+dest_files=[ "res://.import/typing_loop.ogg-1c90be540f2239c6470906fc1183267c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

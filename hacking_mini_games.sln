@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hacking_mini_games", "hacking_mini_games.csproj", "{45859AAC-C9D4-4650-ACB4-27687EBE41BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hacking_mini_games", "hacking_mini_games.csproj", "{440833E8-628C-4ACB-9F45-285AFE6B3FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{45859AAC-C9D4-4650-ACB4-27687EBE41BE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{440833E8-628C-4ACB-9F45-285AFE6B3FAC}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal
